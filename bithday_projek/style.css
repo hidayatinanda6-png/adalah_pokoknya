@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f5efe6;
+  overflow:hidden;
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.slide.active{display:flex}
+
+.bg{
+  position:absolute;
+  inset:0;
+  background:url('cover.jpg') center/cover no-repeat;
+  filter:blur(4px) brightness(.75);
+}
+
+.bg3{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,#111,#000);
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.35);
+}
+
+.center{
+  position:relative;
+  z-index:2;
+  max-width:420px;
+  width:100%;
+  padding:20px;
+}
+
+/* SLIDE 1 */
+.open-btn{
+  padding:18px 36px;
+  font-size:24px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  font-family:'Playfair Display',serif;
+}
+
+.subtitle{
+  margin-top:12px;
+  color:#fff;
+  opacity:.85;
+}
+
+/* SLIDE 2 */
+.quote{
+  font-size:18px;
+  margin-bottom:20px;
+}
+
+.photo-wrapper{
+  position:relative;
+  max-width:360px;
+  margin:0 auto 24px;
+}
+
+.grid{
+  position:relative;
+  z-index:3;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:12px;
+}
+
+.photo{
+  padding-top:100%;
+  border-radius:18px;
+  background-size:cover;
+  background-position:center;
+  box-shadow:0 12px 24px rgba(0,0,0,.15);
+}
+
+/* STICKERS */
+.sticker{
+  position:absolute;
+  width:95px;
+  z-index:1;
+  pointer-events:none;
+  animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+
+/* POSISI NGELILINGIN FOTO */
+.s1{top:-50px;left:-50px}
+.s2{top:-50px;right:-50px}
+.s3{bottom:-50px;left:-50px}
+.s4{bottom:-50px;right:-50px}
+
+/* SLIDE 3 */
+.video-wrap{
+  display:flex;
+  justify-content:center;
+}
+
+video{
+  width:100%;
+  max-width:360px;
+  border-radius:16px;
+  animation:dramatic 1.5s ease forwards;
+}
+
+@keyframes dramatic{
+  from{opacity:0;transform:scale(.9)}
+  to{opacity:1;transform:scale(1)}
+}
+
+.music-btn{
+  margin-top:14px;
+  padding:10px 20px;
+  border:none;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+.dramatic-text{
+  margin-top:14px;
+  font-size:14px;
+  opacity:.7;
+  color:#fff;
+}
+
+.closing{
+  margin-top:10px;
+  font-size:16px;
+  color:#fff;
+}
+
+.back-btn{
+  margin-top:12px;
+  background:transparent;
+  border:1.5px solid rgba(0,0,0,.4);
+  color:#333;
+}
+
+#slide3 .back-btn{
+  color:#fff;
+  border-color:rgba(255,255,255,.5);
+}

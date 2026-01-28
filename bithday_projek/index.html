@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Gift</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- SLIDE 1 -->
+<section class="slide active" id="slide1">
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <div class="center">
+    <button id="openBtn" class="open-btn">Klik dong</button>
+    <p class="subtitle">Kalo mau liat di klik, kalo gamau buang ajaa</p>
+  </div>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide2">
+  <div class="center">
+
+    <h2 class="quote">“congrats Repeat Year (Selamat Ulang Tahun).”</h2>
+
+    <div class="photo-wrapper">
+
+      <!-- STICKERS -->
+      <img src="stickers/hehe.png" class="sticker s1">
+      <img src="stickers/reva.png" class="sticker s2">
+      <img src="stickers/glowing.png" class="sticker s3">
+      <img src="stickers/hadeuh.png" class="sticker s4">
+
+      <!-- PHOTOS -->
+      <div class="grid">
+        <div class="photo" style="background-image:url('image/onta4.jpg')"></div>
+        <div class="photo" style="background-image:url('image/ndc1.jpg')"></div>
+        <div class="photo" style="background-image:url('image/ndc3.jpg')"></div>
+        <div class="photo" style="background-image:url('image/onta1.jpg')"></div>
+      </div>
+
+    </div>
+
+    <button id="nextBtn" class="btn">Klik lagi dongs</button>
+    <button id="backToStart1" class="btn back-btn">← Balik</button>
+
+  </div>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide3">
+  <div class="bg3"></div>
+  <div class="overlay"></div>
+
+  <div class="center">
+    <div class="video-wrap">
+      <video id="video" controls playsinline>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <button id="musicToggle" class="music-btn">Music: ON</button>
+
+    <p class="dramatic-text">tolong ditonton sampai selesai ya…</p>
+    <p class="closing">Happy Birthday, lu yang doa ntar gua yang aminin 🤍</p>
+    <button id="backToStart2" class="btn back-btn">← Balik ke awal</button>
+
+  </div>
+</section>
+
+<audio id="music" src="music.mp3" loop></audio>
+<script src="script.js"></script>
+</body>
+</html>
